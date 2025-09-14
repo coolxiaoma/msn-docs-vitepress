@@ -21,12 +21,6 @@ export default defineConfig({
           { text: 'React', link: '/front-end/react-examples' }
         ]
       },
-      {
-        text: '前端', items: [
-          { text: 'Vue', link: '/front-end/vue-examples' },
-          { text: 'React', link: '/front-end/react-examples' }
-        ]
-      }
     ],
     // 侧边栏
     sidebar: [
