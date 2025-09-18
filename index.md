@@ -15,14 +15,17 @@ hero:
       link: /markdown-examples
     - theme: alt
       text: "Api文档"
-      link: /api-examples
+      link: /markdown-examples
 
 features:
-  - title: 特征 A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 特征 B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 特征 C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 分享最新前端知识
+    details: 文章分享
+    icon: 🚀
+  - title: 分享最新后端知识
+    details: 文章分享
+    icon: ✈️
+  - title: 分享最新数据库知识
+    details: 文章分享
+    icon: 📊
 ---
 

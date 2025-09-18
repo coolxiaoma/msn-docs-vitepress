@@ -1,12 +1,15 @@
 import { defineConfig } from 'vitepress'
-
+import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/msn-docs-vitepress/',
   title: "小马Coder编程文档",
-  description: "A VitePress Site",
+  description: "使用VitePress构建的个人博客",
+  head: [
+    ['link', { rel: 'icon', href: 'favicon.ico' }]
+  ],
   themeConfig: {
-    logo: '/favicon.svg',
+    logo: '/favicon.ico',
     outlineTitle: '目录',
     outline: [2, 6],
     // https://vitepress.dev/reference/default-theme-config
@@ -14,11 +17,10 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Markdown阅读', link: '/markdown-examples' },
-      { text: 'Api文档', link: '/api-examples' },
       {
         text: '前端', items: [
-          { text: 'Vue', link: '/front-end/vue-examples' },
-          { text: 'React', link: '/front-end/react-examples' }
+          { text: 'Vue', link: '/front-end/vue/vue-examples' },
+          { text: 'React', link: '/front-end/react/react-examples' }
         ]
       },
     ],
@@ -28,16 +30,30 @@ export default defineConfig({
         text: '目录',
         items: [
           { text: 'Markdown阅读', link: '/markdown-examples' },
-          { text: 'Api文档', link: '/api-examples' },
         ]
       },
       {
         text: '前端', items: [
-          { text: 'Vue', link: '/front-end/vue-examples' },
-          { text: 'React', link: '/front-end/react-examples' }
+          { text: 'Vue', link: '/front-end/vue/vue-examples' },
+          { text: 'React', items: [
+            { text: 'ReactExamples', link: '/front-end/react/react-examples' },
+            { text: 'ReactTest', link: '/front-end/react/react-test' },
+          ] }
         ]
       }
     ],
+    // sidebar: {
+    //   '/': [
+    //     {
+    //       text: '目录',
+    //       items: [
+    //         { text: 'Markdown阅读', link: '/markdown-examples' },
+    //       ]
+    //     },
+    //   ],
+    //   '/front-end/vue/': set_sidebar('front-end/vue'),
+    //   '/front-end/react/': set_sidebar('front-end/react'),
+    // },
     // 顶部配置
     socialLinks: [
       {
