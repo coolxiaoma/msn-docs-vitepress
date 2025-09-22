@@ -85,7 +85,6 @@ export const gen_multi_group_section = (rootText, pathnames) => {
     // 为每个 .md 文件生成侧边栏项
     const subItems = mdFiles.map((file) => {
       const base = path.basename(file, '.md');
-      console.log('base', base);
       return {
         text: base,  // 显示文本（不含 .md 后缀）
         link: `/${cleanPath}/${base}`,  // 生成链接
