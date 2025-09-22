@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";
+import { gen_group_section, gen_multi_group_section } from "../utils/auto-gen-sidebar.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/msn-docs-vitepress/',
@@ -17,12 +17,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Markdown阅读', link: '/markdown-examples' },
-      {
-        text: '前端', items: [
-          { text: 'Vue', link: '/front-end/vue/vue-examples' },
-          { text: 'React', link: '/front-end/react/react-examples' }
-        ]
-      },
+      gen_multi_group_section('前端', ['/pages/front-end/vue', '/pages/front-end/react']),
     ],
     // 侧边栏
     sidebar: [
@@ -32,28 +27,11 @@ export default defineConfig({
           { text: 'Markdown阅读', link: '/markdown-examples' },
         ]
       },
-      {
-        text: '前端', items: [
-          { text: 'Vue', link: '/front-end/vue/vue-examples' },
-          { text: 'React', items: [
-            { text: 'ReactExamples', link: '/front-end/react/react-examples' },
-            { text: 'ReactTest', link: '/front-end/react/react-test' },
-          ] }
-        ]
-      }
+      gen_multi_group_section('前端', ['/pages/front-end/vue', '/pages/front-end/react']),
+      gen_multi_group_section('Echarts图示例', ['/pages/echarts/pie', '/pages/echarts/line']),
+      // gen_group_section('Echarts图示例', '/pages/echarts/pie-examples'),
+
     ],
-    // sidebar: {
-    //   '/': [
-    //     {
-    //       text: '目录',
-    //       items: [
-    //         { text: 'Markdown阅读', link: '/markdown-examples' },
-    //       ]
-    //     },
-    //   ],
-    //   '/front-end/vue/': set_sidebar('front-end/vue'),
-    //   '/front-end/react/': set_sidebar('front-end/react'),
-    // },
     // 顶部配置
     socialLinks: [
       {
