@@ -112,4 +112,4 @@ export const gen_multi_group_section = (rootText, pathnames) => {
     items,  // 所有子分组
   };
 };
-gen_multi_group_section('Echarts图示例', ['/pages/echarts/饼图', '/pages/echarts/line'])
+// gen_multi_group_section('Echarts图示例', ['/pages/echarts/饼图', '/pages/echarts/line'])
