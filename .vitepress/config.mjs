@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 import {
-  gen_group_section,
   gen_multi_group_section,
 } from "../utils/auto-gen-sidebar.mjs";
 // https://vitepress.dev/reference/site-config
@@ -12,7 +11,7 @@ export default defineConfig({
   themeConfig: {
     logo: "/favicon.ico",
     outlineTitle: "目录",
-    outline: [2, 6],
+    outline: [1, 6],
     // https://vitepress.dev/reference/default-theme-config
     // 导航
     nav: [
@@ -34,9 +33,9 @@ export default defineConfig({
       gen_multi_group_section("前端", [
         "/pages/front-end/vue",
         "/pages/front-end/react",
-      ]),
+      ], true),
       gen_multi_group_section("Echarts图示例", ["/pages/echarts"]),
-      gen_multi_group_section("性能优化", ["/pages/excellent-article"]),
+      gen_multi_group_section("性能优化", ["/pages/excellent-article"], true),
     ],
     // 顶部配置
     socialLinks: [
