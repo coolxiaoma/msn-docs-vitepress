@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as r}from"./chunks/framework.B4sg4S7y.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"front-end/typescript/技巧.md","filePath":"front-end/typescript/技巧.md"}'),n={name:"front-end/typescript/技巧.md"};function a(o,s,c,p,d,i){return r(),e("div")}const m=t(n,[["render",a]]);export{f as __pageData,m as default};
