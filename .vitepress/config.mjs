@@ -16,26 +16,30 @@ export default defineConfig({
     // 导航
     nav: [
       { text: "首页", link: "/" },
-      { text: "Markdown阅读", link: "/markdown-examples" },
       gen_multi_group_section("前端", [
         "/pages/front-end/vue",
         "/pages/front-end/react",
+      ]),
+      gen_multi_group_section("后端", [
+        "/pages/后端/Node",
+        "/pages/后端/Java",
       ]),
       gen_multi_group_section("Echarts图示例", ["/pages/echarts"]),
       gen_multi_group_section("性能优化", ["/pages/excellent-article"]),
     ],
     // 侧边栏
     sidebar: [
-      {
-        text: "目录",
-        items: [{ text: "Markdown阅读", link: "/markdown-examples" }],
-      },
       gen_multi_group_section("前端", [
         "/pages/front-end/vue",
         "/pages/front-end/react",
       ], true),
+      gen_multi_group_section("后端", [
+        "/pages/后端/Java",
+        "/pages/后端/Node",
+      ], true),
       gen_multi_group_section("Echarts图示例", ["/pages/echarts"]),
-      gen_multi_group_section("性能优化", ["/pages/excellent-article"], true),
+      gen_multi_group_section("优化", ["/pages/性能优化"], true),
+      gen_multi_group_section("思想", ["/pages/设计原则"],true),
     ],
     // 顶部配置
     socialLinks: [
