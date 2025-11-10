@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "小马Coder编程文档"
-  text: "分享编程知识"
-  tagline: "探索前沿技术，分享开发经验，提升专业技能。"
+  name: "小马Coder - 前端文档"
+  text: "前端知识分享"
+  tagline: "我是一名自学的前端工程师，使用VitePress构建的个人博客，里面记录了一些自己常用的工具及知识点。"
   image:
     src: /background.png
     alt: VitePress
   actions:
     - theme: brand
-      text: "Markdown阅读"
-      link: /markdown-examples
+      text: "自我介绍"
+      link: /self-introduction
+    - theme: alt
+      text: "Markdown拓展"
+      link: https://vitepress.dev/zh/guide/markdown
     - theme: alt
       text: "Markdown语法使用"
       link: https://markdown.com.cn/basic-syntax/
