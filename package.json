@@ -5,8 +5,8 @@
     "cpr": "^3.0.1"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build && npx rimraf docs && npx cpr .vitepress/dist docs -o",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build && npx rimraf docs && npx cpr .vitepress/dist docs -o",
+    "preview": "vitepress preview"
   }
 }

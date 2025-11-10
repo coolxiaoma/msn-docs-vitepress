@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.B4sg4S7y.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages/面试/场景题.md","filePath":"pages/面试/场景题.md"}'),s={name:"pages/面试/场景题.md"};function r(o,c,n,p,_,d){return a(),t("div")}const f=e(s,[["render",r]]);export{m as __pageData,f as default};
