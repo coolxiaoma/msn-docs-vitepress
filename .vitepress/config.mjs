@@ -25,7 +25,8 @@ export default defineConfig({
         "/pages/后端/Java",
       ]),
       gen_multi_group_section("Echarts图示例", ["/pages/echarts"]),
-      gen_multi_group_section("性能优化", ["/pages/excellent-article"]),
+      gen_multi_group_section("性能优化", ["/pages/性能优化"]),
+      gen_multi_group_section("网络", ["/pages/网络"]),
     ],
     // 侧边栏
     sidebar: [
@@ -40,6 +41,7 @@ export default defineConfig({
       gen_multi_group_section("Echarts图示例", ["/pages/echarts"]),
       gen_multi_group_section("优化", ["/pages/性能优化"], true),
       gen_multi_group_section("思想", ["/pages/设计原则"],true),
+      gen_multi_group_section("知识扩展", ["/pages/拓展"],true),
     ],
     // 顶部配置
     socialLinks: [
