@@ -1,0 +1,8 @@
+const md5 = require('md5');
+
+const origin =
+  'sdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfdsdfasdfasdfasfd';
+
+const result = md5(origin);
+console.log(result);
+
