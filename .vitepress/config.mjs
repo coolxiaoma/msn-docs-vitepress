@@ -5,6 +5,7 @@ export default defineConfig({
   base: "/msn-docs-vitepress/",
   title: "小马Coder编程文档",
   description: "使用VitePress构建的个人博客",
+  ignoreDeadLinks: true,
   head: [["link", { rel: "icon", href: "favicon.ico" }]],
   themeConfig: {
     logo: "/favicon.ico",
