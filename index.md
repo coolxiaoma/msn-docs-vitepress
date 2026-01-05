@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "小马Coder - 前端文档"
+  name: "小码Coder - 前端文档"
   text: "前端知识分享"
   tagline: "我是一名自学的前端工程师，使用VitePress构建的个人博客，里面记录了一些自己常用的工具及知识点。"
   image:
