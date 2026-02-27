@@ -16,6 +16,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       gen_multi_group_section("前端", ["/pages/front-end/vue", "/pages/front-end/react"]),
+      gen_multi_group_section("AI", ["/pages/AI"]),
       gen_multi_group_section("后端", ["/pages/后端/Node", "/pages/后端/Java"]),
       gen_multi_group_section("Echarts图示例", ["/pages/echarts"]),
       gen_multi_group_section("性能优化", ["/pages/性能优化"]),
@@ -24,6 +25,7 @@ export default defineConfig({
     // 侧边栏
     sidebar: [
       gen_multi_group_section("前端", ["/pages/front-end/vue", "/pages/front-end/react"], true),
+      gen_multi_group_section("AI技术分享", ["/pages/AI"], true),
       gen_multi_group_section("后端", ["/pages/后端/Java", "/pages/后端/Node"], true),
       gen_multi_group_section("Echarts图示例", ["/pages/echarts"]),
       gen_multi_group_section("优化", ["/pages/性能优化"], true),
