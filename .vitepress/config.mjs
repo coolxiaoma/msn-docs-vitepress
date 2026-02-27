@@ -34,9 +34,9 @@ export default defineConfig({
       gen_multi_group_section("动画", ["/pages/动画"], true),
       gen_multi_group_section("浏览器插件", ["/pages/浏览器插件"], true),
       gen_multi_group_section("工具", ["/pages/工具"], true),
-      gen_multi_group_section("第三方", ["/pages/第三方"], true),
-      gen_multi_group_section("GitHub优质项目", ["/pages/GitHub优质项目"]),
-      gen_multi_group_section("Windows系统重装", ["/pages/Windows系统重装"]),
+      gen_multi_group_section("第三方", ["/pages/第三方接口接入"], true),
+      gen_multi_group_section("GitHub", ["/pages/GitHub优质项目"], true),
+      gen_multi_group_section("系统", ["/pages/Windows系统重装"], true),
     ],
     // 顶部配置
     socialLinks: [

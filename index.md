@@ -24,7 +24,7 @@ features:
   - title: 分享最新前端知识
     details: 深入解析现代前端框架（React、Vue），分享性能优化技巧、用户体验设计原则和响应式布局实现方法。包含实战案例和代码示例。
     icon: 🚀
-    link: /pages/front-end/vue/Vue3.5新特性
+    link: /pages/front-end/vue/文章归纳
   - title: 分享最新后端知识
     details: 深入解析现代后端框架（Node.js、Django、Spring Boot），分享性能优化技巧、用户体验设计原则和响应式布局实现方法。包含实战案例和代码示例。
     icon: ✈️
@@ -40,10 +40,10 @@ features:
   - title: 第三方API接入
     details: 分析如何接入第三方API，如DeepSeek使用SEE进行接入
     icon: 🤖
-    link: /pages/第三方/DeepSeek
+    link: /pages/第三方接口接入/DeepSeekApi使用
   - title: 项目
     details: 分享自己所做的项目
     icon: 📚
-    link: /pages/项目/copy-star
+    link: /pages/项目/index
 ---
 
